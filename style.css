@@ -1,0 +1,608 @@
+  /* ===== 1. RESET & BASE STYLES ===== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+ 
+  img {
+    max-width: 100%;
+    display: block;
+  }
+ 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+ 
+  ul {
+    list-style: none;
+  }
+ 
+  /* Simple container to center content and control max width */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+ 
+  /* Reusable button style */
+  .btn {
+    display: inline-block;
+    background-color: #00a887;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .btn:hover {
+    background-color: #00916f;
+  }
+ 
+  /* Reusable section spacing */
+  section {
+    padding: 60px 0;
+  }
+ 
+  /* ===== 2. HEADER ===== */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .logo {
+    /* font-size: 22px;
+    font-weight: bold;
+    line-height: 1.1; */
+    width: 200px;
+    height: 200px;
+  }
+ 
+  /* .logo span {
+    display: block;
+    border-top: 3px solid #00a887;
+    width: 30px;
+    margin-bottom: 6px;
+  } */
+ 
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+ 
+  .nav-links a {
+    font-size: 15px;
+  }
+ 
+  /* Hide checkbox + hamburger icon on desktop */
+  .menu-toggle,
+  .hamburger {
+    display: none;
+  }
+ 
+  /* ===== 3. HERO SECTION ===== */
+  .hero {
+    position: relative;
+    background-image:
+        linear-gradient(
+            rgba(0, 34, 97, 0.123),
+            rgba(99, 22, 3, 0.178),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("./img/man-jumping.jpeg");
+    /* background-size: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15% 30%;
+    color: #fff;
+    text-align: center;
+    padding: 160px 60px;
+  }
+ 
+  .hero-eyebrow {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+ 
+  .hero h1 {
+    font-size: 40px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+ 
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+ 
+  /* ===== 4. INTRO / ABOUT SECTION ===== */
+  .intro {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  .intro-text a {
+    color: #0070c0;
+}
+
+.intro-text a:hover {
+    color: #003b5c;
+}
+ 
+  .intro-text {
+    flex: 1;
+  }
+ 
+  .intro-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+ 
+  .intro-text p {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+ 
+  .intro-image {
+    flex: 1;
+  }
+ 
+  .intro-image img {
+    border-radius: 8px;
+  }
+ 
+  /* ===== 5. INCENTIVE SECTION ===== */
+  .incentive {
+    background-color: #f8fafc;
+  }
+ 
+  .incentive-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+ 
+  .incentive-header h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+ 
+  /* Card grid - 2 columns on desktop */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+ 
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 70px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+ 
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #007acc;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+ 
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+ 
+  .card img {
+    margin: 0 auto 15px;
+    max-height: 140px;
+    object-fit: contain;
+  }
+ 
+  .card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+ 
+  .card .btn {
+    background-color: #005ea8;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+  }
+ 
+  .card .btn:hover {
+    background-color: #004a86;
+  }
+
+  .Tankgutschein{
+    color: #01a781;
+  }
+ 
+  /* ===== 6. GIVEAWAY / GEWINNSPIEL SECTION ===== */
+
+  .exclusive{
+    padding: 70px 20px;
+  }
+
+  .giveaway {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+ 
+  .giveaway-text {
+    flex: 1;
+  }
+ 
+  .giveaway-text .eyebrow {
+    color: #00a887;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+ 
+  .giveaway-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+ 
+  .giveaway-text p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+ 
+  .prize-box {
+    background-color: #00a887;
+    color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+ 
+  .prize-box span {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+  }
+ 
+  .prize-box strong {
+    font-size: 20px;
+    display: block;
+  }
+ 
+  .giveaway-image {
+    flex: 1;
+  }
+ 
+  .giveaway-image img {
+    border-radius: 8px;
+  }
+ 
+  /* Steps row (1 / 2 / 3) */
+  .steps {
+    display: flex;
+    gap: 20px;
+  }
+ 
+  .step {
+    flex: 1;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    padding: 8px;
+  }
+ 
+  .step-number {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #00a887;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+ 
+  .step p {
+    font-size: 9px;
+  }
+ 
+  /* ===== 7. DARK CTA SECTION ===== */
+  .cta-dark {
+    background-color: #0a1930;
+    color: #fff;
+    text-align: center;
+  }
+ 
+  .cta-dark h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+ 
+  .cta-dark p {
+    max-width: 500px;
+    margin: 0 auto 25px;
+    font-size: 15px;
+    opacity: 0.85;
+  }
+ 
+  /* ===== 8. CONTACT SECTION ===== */
+  .contact {
+    text-align: center;
+  }
+
+  .contact-section{
+    padding: 50px 0;
+  }
+ 
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+ 
+  .contact > p {
+    margin-bottom: 40px;
+  }
+ 
+  .contact-cards {
+    display: flex;
+    gap: 25px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+ 
+  .contact-card {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-radius: 6px;
+  }
+ 
+  .contact-card .icon {
+    font-size: 22px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: #0070c0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-bg{
+    background-color: #00b388;
+}
+
+.icon-circle img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+ 
+  .contact-card strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+ 
+  .contact-card p {
+    font-size: 13px;
+    color: #444;
+  }
+ 
+  .terms {
+    text-align: left;
+    padding-top: 30px;
+  }
+ 
+  .terms h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+ 
+  .terms ul li {
+    font-size: 13px;
+    margin-bottom: 6px;
+    padding-left: 15px;
+    position: relative;
+  }
+ 
+  .terms ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+  }
+ 
+  /* ===== 9. FOOTER ===== */
+  .footer {
+    background-color: #0a1930;
+    color: #cfd6e0;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+  }
+ 
+ 
+ /* =========================================================
+     TABLET (max-width: 900px)
+     Stack two-column sections, shrink the logo/cards down
+     to something that fits, drop headings a size
+  ========================================================= */
+  @media (max-width: 900px) {
+ 
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+ 
+    .hero {
+      padding: 120px 40px;
+    }
+ 
+    .hero h1 {
+      font-size: 32px;
+    }
+ 
+    .intro,
+    .giveaway {
+      flex-direction: column;
+      padding: 60px 0;
+    }
+ 
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+ 
+    .card {
+      padding: 35px;
+    }
+ 
+    .contact-cards {
+      flex-direction: column;
+    }
+ 
+    .steps {
+      flex-direction: column;
+    }
+ 
+    .step p {
+      font-size: 13px;
+    }
+
+    .terms{
+        padding: 0 20px;
+    }
+  }
+ 
+ 
+  /* =========================================================
+     MOBILE (max-width: 600px)
+     Collapsible nav, tighter spacing, smaller type
+  ========================================================= */
+  @media (max-width: 600px) {
+
+    .nav-links > .btn{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contact-card{
+        padding: 20px;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+
+    .terms{
+        padding: 20px;
+    }
+ 
+    section {
+      padding: 40px 0;
+    }
+ 
+    .logo {
+      width: 110px;
+      height: 110px;
+    }
+ 
+    /* Hero */
+    .hero {
+      padding: 70px 15px;
+    }
+ 
+    .hero h1 {
+      font-size: 24px;
+    }
+ 
+    .hero p {
+      font-size: 14px;
+    }
+ 
+    /* Navigation becomes a collapsible menu */
+    .hamburger {
+      display: block;
+      font-size: 26px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+ 
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      flex-direction: column;
+      gap: 0;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      z-index: 10;
+    }
+ 
+    .nav-links a,
+    .nav-links button {
+      width: 100%;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+ 
+    /* Checkbox hack: show menu when toggle is checked */
+    .menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+ 
+    .header {
+      position: relative;
+    }
+ 
+    /* Cards */
+    .card {
+      padding: 25px;
+    }
+ 
+    /* Headings */
+    .intro-text h2,
+    .incentive-header h2,
+    .giveaway-text h2,
+    .cta-dark h2,
+    .contact h2 {
+      font-size: 22px;
+    }
+ 
+    .prize-box strong {
+      font-size: 18px;
+    }
+  }
+ 
